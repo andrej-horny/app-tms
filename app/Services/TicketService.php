@@ -139,7 +139,6 @@ class TicketService
             ),                        
         ))->toArray();
     }
-    // public function __construct(protected EntityRelationService $erService) {}
 
     // public function assignVehicle(Ticket $ticket, Vehicle $vehicle)
     // {
