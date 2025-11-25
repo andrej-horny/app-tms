@@ -7,6 +7,7 @@ use App\Filament\Resources\Fleet\Vehicle\VehicleResource\Components\VehicleModel
 use App\Filament\Resources\TS\TicketItemResource\Components\TicketItemActivities;
 use App\Filament\Resources\TS\TicketItemResource\Components\TicketItemMaterials;
 use Dpb\Package\TaskMS\Infrastructure\Persistence\Eloquent\Models\Fleet\EloquentMaintenanceGroup;
+use Dpb\Package\TaskMS\Infrastructure\Persistence\Eloquent\Models\Fleet\EloquentVehicle;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
@@ -46,7 +47,8 @@ class AppServiceProvider extends ServiceProvider
             'vehicle' => \Dpb\Package\Fleet\Models\Vehicle::class,
             'maintenance-group' => \Dpb\Package\Fleet\Models\MaintenanceGroup::class,
             //
-            'eloquent-maintenance-group' => EloquentMaintenanceGroup::class,
+            // 'eloquent-vehicle' => EloquentVehicle::class,
+            // 'eloquent-maintenance-group' => EloquentMaintenanceGroup::class,
 
         ]);
 
